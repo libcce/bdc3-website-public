@@ -1,8 +1,9 @@
 import React from 'react'
 import { SEO } from '../components/seo'
-import { Paragraph } from '../components/typography'
+import { Link } from 'gatsby'
+import { Subheading, Paragraph } from '../components/typography'
 import { Card, CardHeader, CardBody } from '../components/card'
-import { PageContent, Container } from '../components/layout'
+import { PageContent, Container, Notice } from '../components/layout'
 import { DataCarousel } from '../components/data-carousel'
 import { HexMenu } from '../components/menus'
 import { BulletedList, ListItem } from '../components/list'
@@ -18,6 +19,14 @@ const IndexPage = () => {
                 description=""
                 keywords=""
             />
+
+            <Notice mutable>
+                <Subheading center style={{ fontWeight: 'normal' }}>
+                    <Link to="/covid-19">
+                        <span>BioData Catalyst's response to COVID-19</span>
+                    </Link>
+                </Subheading>
+            </Notice>
 
             <DataCarousel />
 
