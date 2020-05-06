@@ -11,8 +11,8 @@ import { List, ListItem } from '../components/list'
 import { useWindowWidth } from '../hooks'
 import hexBackgroundLeftSvg from '../images/hex-background-left.svg'
 import hexBackgroundRightSvg from '../images/hex-background-right.svg'
-import { ButtonExternalLink } from '../components/buttons'
-import { ExternalLink } from '../components/link'
+// import { ButtonExternalLink } from '../components/buttons'
+import { ExternalLink, OutsideLink } from '../components/link'
 
 import '../styles/normalize.css'
 import '../styles/customize.css'
@@ -96,7 +96,7 @@ export const DefaultLayout = ({ children }) => {
                         <Row>
                             <Col xs={ 12 } style={{ textAlign: 'center' }}>
                                 <Heading center light noMargin>Consortium Members</Heading> <br/><br/>
-                                <ButtonExternalLink light to="https://nhlbidatastage.org/Security/login"><strong>Login</strong></ButtonExternalLink>
+                                <OutsideLink asButton light to="https://nhlbidatastage.org/Security/login"><strong>Login</strong></OutsideLink>
                             </Col>
                         </Row>
                     </Grid>

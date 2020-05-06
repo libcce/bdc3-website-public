@@ -15,9 +15,9 @@ export const ButtonLink = styled(Button).attrs({ as: Link })`
     ${ transitionBrightness }
 `
 
-export const ButtonExternalLink = styled(Button).attrs({ as: ExternalLink })`
-    ${ transitionBrightness }
-`
+// export const ButtonExternalLink = styled(Button).attrs({ as: ExternalLink })`
+//     ${ transitionBrightness }
+// `
 
 export const ButtonCta = styled(ButtonLink)`
     font-weight: bold;

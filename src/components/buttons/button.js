@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Button = styled.button`
     background-color: ${ props => props.light ? '#fff' : 'var(--color-crimson)' };
     border-radius: 4px;
-    border: ${ props => props.light ? '2px solid var(--color-crimson)' : '0' };
+    border: 2px solid var(--color-crimson);
     color: ${ props => props.light ? 'var(--color-crimson) !important' : '#fff' };
     padding: 1rem 1.5rem;
     text-transform: uppercase;

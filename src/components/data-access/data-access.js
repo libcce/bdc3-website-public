@@ -31,7 +31,7 @@ const DownloadButton = styled(Button)`
 `
 
 export const DataAccess = ({ location }) => {
-    const { user, projects, isLoading } = useFence(location)
+    const { user, projects, isLoading, error } = useFence(location)
     const { isCompact } = useWindowWidth()
     const fenceCheckAccessUrl = `${ process.env.GATSBY_FENCE_AUTH_ROOT }/user/oauth2/authorize?idp=fence&client_id=${ process.env.GATSBY_FENCE_CLIENT_ID }&redirect_uri=${ process.env.NODE_ENV === 'production' ? location.origin : 'https://staging.biodatacatalyst.nhlbi.nih.gov' }/resources/data&response_type=id_token+token&scope=openid+user&nonce=2bfe151af238d21f48d8a8bf8bbec408838c8dc0ace6b4c5621ac9dfa157798b`
 

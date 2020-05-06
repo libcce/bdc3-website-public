@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { PageContent } from '../components/layout'
 import { Title, Heading, Paragraph } from '../components/typography'
-import { ExternalLink } from '../components/link'
+import { ExternalLink, OutsideLink } from '../components/link'
 
 const KeyFeaturesList = styled.div`
     & p {
@@ -18,7 +18,7 @@ const KeyFeaturesList = styled.div`
 `
 
 const LinkList = styled(Paragraph)`
-    & ${ ExternalLink } {
+    & > a {
         margin: 0 1rem;
     }
 `
@@ -44,8 +44,7 @@ export default ({ data }) => {
             <Heading center>Powered by { frontmatter.title }</Heading>
             
             <LinkList center>
-                <ExternalLink to={ frontmatter.links.launch }>Website</ExternalLink> | 
-                <ExternalLink to={ frontmatter.links.documentation }>Documentation</ExternalLink>
+                <OutsideLink to={ frontmatter.links.launch }>Website</OutsideLink> | <OutsideLink to={ frontmatter.links.documentation }>Documentation</OutsideLink>
             </LinkList>
 
             <Heading>About { frontmatter.title }</Heading>

@@ -45,8 +45,8 @@ export const useFence = location => {
         }
         // if fence user found in local storage
         if (fenceUser) {
-            setIsLoading(true)
             try {
+                setIsLoading(true)
                 const jwt = jwtDecode(fenceUser.id_token)
                 const { exp } = jwt
                 const now = new Date()
@@ -59,8 +59,11 @@ export const useFence = location => {
                 } else {
                     throw new Error('nope')
                 }
-            } catch {
+            } catch (error) {
                 setAuthed(false)
+                setError(error)
+            } finally {
+                setIsLoading(false)
             }
         }
         // if fence query params are present

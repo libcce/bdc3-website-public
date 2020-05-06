@@ -2,7 +2,7 @@ import React from 'react'
 import { SEO } from '../../components/seo'
 import { PageContent } from '../../components/layout'
 import { Title, Heading, Paragraph } from '../../components/typography'
-import { ButtonExternalLink } from '../../components/buttons'
+import { OutsideLink } from '../../components/link'
 
 const ByodPage = () => (
     <PageContent width="95%" maxWidth="1200px" center gutters>
@@ -32,13 +32,13 @@ const ByodPage = () => (
             <br/>
 
             <Paragraph center>
-                <ButtonExternalLink to="https://sb-biodatacatalyst.readme.io/docs/upload-to-the-platform">BYOD to BioData Catalyst powered by Seven Bridges</ButtonExternalLink>
+                <OutsideLink asButton to="https://sb-biodatacatalyst.readme.io/docs/upload-to-the-platform">BYOD to BioData Catalyst powered by Seven Bridges</OutsideLink>
             </Paragraph>
             
             <br/>
 
             <Paragraph center>
-                <ButtonExternalLink to="https://bdcatalyst.gitbook.io/biodata-catalyst-documentation/analyze-data/terra/using-your-own-data-with-terra">BYOD to BioData Catalyst powered by Terra</ButtonExternalLink>
+                <OutsideLink asButton to="https://bdcatalyst.gitbook.io/biodata-catalyst-documentation/analyze-data/terra/using-your-own-data-with-terra">BYOD to BioData Catalyst powered by Terra</OutsideLink>
             </Paragraph>
         </section>
 

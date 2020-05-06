@@ -3,8 +3,9 @@ import styled from 'styled-components'
 export const IconButton = styled.button`
     background-color: transparent;
     border: 0;
-    padding: 1rem;
-    cursor: pointer;
+    padding: 0.5rem;
+    cursor: ${ props => props.disabled ? 'default' : 'pointer' };;
+    opacity: ${ props => props.disabled ? '0.5' : '1.0' };
     display: flex;
     justify-content: center;
     align-items: center;

@@ -8,7 +8,7 @@ import styled from 'styled-components'
 import { PageContent } from '../components/layout'
 import { Title, Heading, Subheading, Paragraph } from '../components/typography'
 import { List, ListItem } from '../components/list'
-import { ExternalLink } from '../components/link'
+import { OutsideLink } from '../components/link'
 import { Container as Grid, Row, Col, Visible } from 'react-grid-system'
 import { usePartners, usePlatforms } from '../hooks'
 
@@ -118,7 +118,7 @@ const AboutPage = ({ data }) => {
                             </Paragraph>
                 
                             <ol style={{ lineHeight: 2 }}>
-                                <li>Ongoing submission and upvoting of ideas via the <ExternalLink to="https://biodatacatalyst.ideascale.com/">NHLBI BioDataCatalyst Ideascale</ExternalLink>.</li>
+                                <li>Ongoing submission and upvoting of ideas via the <OutsideLink to="https://biodatacatalyst.ideascale.com/">NHLBI BioDataCatalyst Ideascale</OutsideLink>.</li>
                                 <li>Periodic Requests for Comment (RFC) solicitations.</li>
                             </ol>
                         </section>
